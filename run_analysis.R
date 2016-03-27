@@ -1,4 +1,4 @@
-# R programing script file for Getting and Cleaning Data class project
+# R programing script file for week 4 of  Getting and Cleaning Data class project
 # Created by John Elliott, 3/27/2016
 #Script assumes data files are in working directory
 
