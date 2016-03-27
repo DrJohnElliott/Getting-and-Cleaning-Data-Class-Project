@@ -13,7 +13,7 @@
          }
 
 
-setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
+#setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
 library(dplyr)
 
 # Read Data Into R
@@ -120,8 +120,6 @@ final_data_set$Activity <-lapply(final_data_set$Activity,myFun2)
 # Clean up Envioroment     
         rm("i","unique","make_data")
 
-# Print result to console
-str(second_set)
 
 
 
