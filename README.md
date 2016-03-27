@@ -44,8 +44,8 @@ See 'features_info.txt' for more details.
 - 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
-- 
-####The following files are available for the train and test data. Their descriptions are equivalent. 
+ 
+#### The following files are available for the train and test data. Their descriptions are equivalent. 
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. 
