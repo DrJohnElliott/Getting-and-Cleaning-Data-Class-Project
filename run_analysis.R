@@ -2,6 +2,7 @@
 # Created by John Elliott, 3/27/2016
 #Script assumes data files are in working directory
 
+
 # List of required files
         required_files <- c("X_test.txt","y_test.txt","X_train.txt","y_train.txt", "subject_test.txt", "subject_train.txt", "features.txt", "activity_labels.txt" )
 
