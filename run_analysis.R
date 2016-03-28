@@ -55,7 +55,7 @@ library(dplyr)
         my_data <- rbind(set_x_test,set_x_train)
         
 # Clean up Envioroment  
-        rm( "myFun" , "features_list" , "my_list",
+        rm( "myFun" , "features_list" , "my_list", "required_files",
             "temp1", "temp2","set_y_test", "set_x_test", "set_x_train", 
             "set_y_train", "set_subject_test", "set_subject_train" )
        
