@@ -121,8 +121,12 @@ final_data_set$Activity <-lapply(final_data_set$Activity,myFun2)
 # Clean up Envioroment     
         rm("i","unique","make_data")
 
-
-
+# Save Data file as "Project_Data.txt"
+        write.table(second_set, file = "Project_Data.txt")
+        
+# Read Data Table back into R and view
+        data <- read.table("Project_Data.txt", header = TRUE)
+        View(data)
 
 
 
