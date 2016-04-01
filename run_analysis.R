@@ -139,7 +139,7 @@ myFun2 <- function(x){
         rm("i","unique","make_data")
 
 # Save Data file as "Project_Data.txt"
-        write.table(second_set, file = "Project_Data.txt")
+        write.table(second_set, file = "Project_Data.txt", row.names = FALSE)
         
 # Read Data Table back into R and view it
         data <- read.table("Project_Data.txt", header = TRUE)
