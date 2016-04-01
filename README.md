@@ -1,6 +1,6 @@
 # Getting-and-Cleaning-Data-Class-Project
-This class project is based on "Human Activity Recognition Using Smartphones Dataset"
-www.smartlab.ws
+This READ ME file was created for the class project and was created by modifying the original README file from the source: "Human Activity Recognition Using Smartphones Dataset" and is included below
+*Original readme Source: www.smartlab.ws
 ==================================================================
 Overview:
 The script file "run_analysis.R" was created to process the raw data files and output a Tidy data set.
