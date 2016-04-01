@@ -1,6 +1,12 @@
 # Getting-and-Cleaning-Data-Class-Project
-
-
+This class project is based on "Human Activity Recognition Using Smartphones Dataset"
+www.smartlab.ws
+==================================================================
+Overview:
+The script file "run_analysis.R" was created to process the raw data files and output a Tidy data set.
+The Raw data 
+The output from the script file 
+Script File "run_analysis.R" was created to process the raw data files and output a Tidy data set
 ==================================================================
 ## Human Activity Recognition Using Smartphones Dataset
 ## Version 1.0
