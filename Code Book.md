@@ -7,6 +7,7 @@ It is a modified version of an original code book created for the project: "Huma
 The file Project_Data contains the data calculated from a combination of two raw data sets.
 The Varibles are the mean of group of observations for each activity for each subject.
 The Activity observations were modified from the original data set to be more discriptive.
+Units of measurement for the varibles are explained in the Feature Section, where accelaration is in g's and the time domain is constant 50hz sample rate. Frequency domain varibles were created in the original data set using FFT Fast Fourier Transform processing.
 The original varibles are described below in the feature section from the original CodeBook.
 A complete list of the varible names are found in the file "Project_Data_Names" and is created from the script file run_anaylisis.R
 
