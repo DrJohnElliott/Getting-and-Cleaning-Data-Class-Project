@@ -1,7 +1,24 @@
 # Getting-and-Cleaning-Data-Class-Project
-
+This READ ME file was created for the class project and was created by modifying the original README file for the project: "Human Activity Recognition Using Smartphones Dataset" and is included below:
+* Original README Source: www.smartlab.ws
 
 ==================================================================
+Overview:
+The script file "run_analysis.R" was created to process the raw data files and output a Tidy data set.
+The script performs the following functions
+* Checks to see if the required raw data files are in the working directory
+* Reads the Raw data files into the Envioroment
+* Pulls the original Varible and Activity names from the raw files and puts them into list form
+* Modifies original varible names to make them TIDY so they are descriptive
+* Combines Data sets from the raw data sets "Train" and "Test" into one data set
+* Creates Tidy data names for the Activities by replacing the activity numbers with descriptive names
+* Creates a subset of the main data consisting only of varibles represinting mean and standard deviation values
+* Creates another data set based on the subset by taking the mean for each subject for each activity
+* This final data set is written to a text file "Project_Data.txt" and stored in the working directory
+* Creates a file with all of the varible names of the final data set called "Project_Data_Names.txt" and stores it in the working directory
+
+==================================================================
+# Original README file
 ## Human Activity Recognition Using Smartphones Dataset
 ## Version 1.0
 ==================================================================
