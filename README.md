@@ -1,5 +1,5 @@
 # Getting-and-Cleaning-Data-Class-Project
-This READ ME file was created for the class project and was created by modifying the original README file from the source: "Human Activity Recognition Using Smartphones Dataset" and is included below:
+This READ ME file was created for the class project and was created by modifying the original README file for the project: "Human Activity Recognition Using Smartphones Dataset" and is included below:
 * Original README Source: www.smartlab.ws
 
 ==================================================================
