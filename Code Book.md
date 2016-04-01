@@ -2,11 +2,29 @@
 This code book was created for Getting and Cleaning Data Class Project.
 It is a modified version of an original code book created for the project: "Human Activity Recognition Using Smartphones Dataset" and is included below:
 * Original Code Book Source: www.smartlab.ws
+
 ####Project Data
-The file Project_Data contains the data calculated from a combination of two raw data sets
+The file Project_Data contains the data calculated from a combination of two raw data sets.
 The Varibles are the mean of group of observations for each activity for each subject.
+The Activity observations were modified from the original data set to be more discriptive.
 The original varibles are described below in the feature section from the original CodeBook.
 A complete list of the varible names are found in the file "Project_Data_Names" and is created from the script file run_anaylisis.R
+
+* "Activity"
+* "Subject"
+* "Subject Average of time domain for BodyAcc-mean()-X"
+* "Subject Average of time domain for BodyAcc-mean()-Y"
+* "Subject Average of time domain for BodyAcc-mean()-Z"
+* "Subject Average of time domain for BodyAcc-std()-X"
+* "Subject Average of time domain for BodyAcc-std()-Y"
+* "Subject Average of time domain for BodyAcc-std()-Z"
+* "Subject Average of time domain for GravityAcc-mean()-X"
+* "Subject Average of time domain for GravityAcc-mean()-Y"
+* "Subject Average of time domain for GravityAcc-mean()-Z"
+* ...
+* "Subject Average of frequency domain for BodyAccJerk-mean()-X"
+* "Subject Average of frequency domain for BodyAccJerk-mean()-Y"
+* "Subject Average of frequency domain for BodyAccJerk-mean()-Z"
 
 
 Feature Selection 
