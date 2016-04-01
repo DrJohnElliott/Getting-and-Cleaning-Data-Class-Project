@@ -2,7 +2,7 @@
 # Created by John Elliott, 3/27/2016
 #Script assumes data files are in working directory
 
-#setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
+setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
 
 # List of required files
         required_files <- c("X_test.txt","y_test.txt","X_train.txt","y_train.txt", "subject_test.txt", "subject_train.txt", "features.txt", "activity_labels.txt" )
@@ -93,8 +93,8 @@ myFun2 <- function(x){
 # Function to update varible names, making them Tidy and more discriptive to the user        
         tidy_names <- function(x){
                 
-                if (identical(substring(colnames(final_data_set[x]),1,1),"f") )        paste(c("frequency", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
-                else if (identical(substring(colnames(final_data_set[x]),1,1),"t"))    paste(c("time", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
+                if (identical(substring(colnames(final_data_set[x]),1,1),"f") )        paste(c("Subject Average of frequency domain for", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
+                else if (identical(substring(colnames(final_data_set[x]),1,1),"t"))    paste(c("Subject Average of time domain for", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
                 else colnames(final_data_set[x])
         }
         
@@ -140,6 +140,9 @@ myFun2 <- function(x){
 
 # Save Data file as "Project_Data.txt"
         write.table(second_set, file = "Project_Data.txt", row.names = FALSE)
+        
+# Save Varible list as"Project_Data_Names.txt"
+        write.table(names(second_set), file = "Project_Data_Names.txt", row.names = FALSE)
         
 # Read Data Table back into R and view it
         data <- read.table("Project_Data.txt", header = TRUE)
