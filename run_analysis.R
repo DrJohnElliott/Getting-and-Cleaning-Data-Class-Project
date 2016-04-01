@@ -1,8 +1,8 @@
 # R programing script file for Getting and Cleaning Data class project
 # Created by John Elliott, 3/27/2016
 #Script assumes data files are in working directory
-
-setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
+# Set working directory
+#setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
 
 # List of required files
         required_files <- c("X_test.txt","y_test.txt","X_train.txt","y_train.txt", "subject_test.txt", "subject_train.txt", "features.txt", "activity_labels.txt" )
