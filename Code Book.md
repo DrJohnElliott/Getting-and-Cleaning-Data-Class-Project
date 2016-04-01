@@ -1,17 +1,7 @@
 #Code Book for Class Project 
+This code book was created for Getting and Cleaning Data Class Project.
+It is a modified version of an original code book created for the 
 
-
-
-
-
-
-
-
-
-
-
-
-## ORIGINAL CODE BOOK TEXT 
 ###Shown Below
 source: 
 Feature Selection 
