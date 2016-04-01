@@ -140,12 +140,11 @@ myFun2 <- function(x){
 
 # Save Data file as "Project_Data.txt"
         write.table(second_set, file = "Project_Data.txt", row.names = FALSE)
-<<<<<<< HEAD
+
         
 # Save Varible list as"Project_Data_Names.txt"
         write.table(names(second_set), file = "Project_Data_Names.txt", row.names = FALSE)
-=======
->>>>>>> b9cd651fceb63f61bfcd4d48471490e3030078b1
+
         
 # Read Data Table back into R and view it
         data <- read.table("Project_Data.txt", header = TRUE)
