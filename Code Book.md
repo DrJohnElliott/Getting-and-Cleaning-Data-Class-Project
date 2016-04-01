@@ -1,9 +1,14 @@
 #Code Book for Class Project 
 This code book was created for Getting and Cleaning Data Class Project.
-It is a modified version of an original code book created for the 
+It is a modified version of an original code book created for the project: "Human Activity Recognition Using Smartphones Dataset" and is included below:
+* Original Code Book Source: www.smartlab.ws
+####Project Data
+The file Project_Data contains the data calculated from a combination of two raw data sets
+The Varibles are the mean of group of observations for each activity for each subject.
+The original varibles are described below in the feature section from the original CodeBook.
+A complete list of the varible names are found in the file "Project_Data_Names" and is created from the script file run_anaylisis.R
 
-###Shown Below
-source: 
+
 Feature Selection 
 =================
 
