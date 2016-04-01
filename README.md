@@ -4,9 +4,16 @@ www.smartlab.ws
 ==================================================================
 Overview:
 The script file "run_analysis.R" was created to process the raw data files and output a Tidy data set.
-The Raw data 
-The output from the script file 
-Script File "run_analysis.R" was created to process the raw data files and output a Tidy data set
+The script performs the following functions
+* Checks to see if the required raw data files are in the woprking directory
+* Reads the Raw data files into the Envioroment
+* Pulls the original Varible and Activity names and puts them into list form
+* Combines Data sets for Train and Test into one data set
+* Creates Tidy data names for the Activities and Varibles
+* Creates a subset of the main data of Mean and Stadard deviation varibles
+* Creates another data set based on the subset by taking the mean for each subject for each activity
+* This final data set is written to a text file and stored in the working directory
+
 ==================================================================
 ## Human Activity Recognition Using Smartphones Dataset
 ## Version 1.0
