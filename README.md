@@ -14,7 +14,7 @@ The script performs the following functions
 * Creates Tidy data names for the Activities by replacing the activity numbers with descriptive names
 * Creates a subset of the main data consisting only of varibles represinting mean and standard deviation values
 * Creates another data set based on the subset by taking the mean for each subject for each activity
-* This final data set is written to a text file and stored in the working directory
+* This final data set is written to a text file "Project_Data" and stored in the working directory
 
 ==================================================================
 # Original README file
