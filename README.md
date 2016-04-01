@@ -15,6 +15,7 @@ The script performs the following functions
 * Creates a subset of the main data consisting only of varibles represinting mean and standard deviation values
 * Creates another data set based on the subset by taking the mean for each subject for each activity
 * This final data set is written to a text file "Project_Data" and stored in the working directory
+* Creates a file with all of the varible names of the final data set called "Project_Data_Names" and stores it in the working directory
 
 ==================================================================
 # Original README file
