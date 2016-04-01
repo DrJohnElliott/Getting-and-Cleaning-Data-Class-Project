@@ -2,6 +2,7 @@
 # Created by John Elliott, 3/27/2016
 #Script assumes data files are in working directory
 
+setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
 
 # List of required files
         required_files <- c("X_test.txt","y_test.txt","X_train.txt","y_train.txt", "subject_test.txt", "subject_train.txt", "features.txt", "activity_labels.txt" )
@@ -12,11 +13,10 @@
                 print("Place the following files into Working directory")
                 print(required_files)
          }
-
-
-#setwd("C:/Users/John/Desktop/R-Code/Coursera/Clean Data/Week 4/Class project")
+              
 library(dplyr)
-
+library(stringr)
+        
 # Read Data Into R
         set_x_test <- read.table("X_test.txt")
         set_y_test <- read.table("y_test.txt")
@@ -66,6 +66,8 @@ library(dplyr)
         substring="mean|std"
         my_filter_list <-  grepl(substring,my_names)
         final_names1 <- my_names[my_filter_list]
+
+
         final_names <- (c( "Activity", "Subject", final_names1) )
         
 #Create Final Data Set
@@ -76,16 +78,31 @@ library(dplyr)
         
 #Function to replace activity number with desciption from text file
 myFun2 <- function(x){
-        if(x == 1) final_data_set$Activity<- activity_list[[1]]
+        if(x == 1)      final_data_set$Activity<- activity_list[[1]]
         else if( x==2 ) final_data_set$Activity<- activity_list[[2]]
-        else if( x==3) final_data_set$Activity<- activity_list[[3]]
-        else if( x==4) final_data_set$Activity<- activity_list[[4]]
-        else if( x==5) final_data_set$Activity<- activity_list[[5]]
-        else if( x==6) final_data_set$Activity<- activity_list[[6]]
+        else if( x==3)  final_data_set$Activity<- activity_list[[3]]
+        else if( x==4)  final_data_set$Activity<- activity_list[[4]]
+        else if( x==5)  final_data_set$Activity<- activity_list[[5]]
+        else if( x==6)  final_data_set$Activity<- activity_list[[6]]
 }
 
 #Call function and apply to data frame
-final_data_set$Activity <-lapply(final_data_set$Activity,myFun2)
+        final_data_set$Activity <-lapply(final_data_set$Activity,myFun2)
+
+
+# Function to update varible names, making them Tidy and more discriptive to the user        
+        tidy_names <- function(x){
+                
+                if (identical(substring(colnames(final_data_set[x]),1,1),"f") )        paste(c("frequency", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
+                else if (identical(substring(colnames(final_data_set[x]),1,1),"t"))    paste(c("time", substring(colnames(final_data_set[x]),2)), sep = "", collapse = " ")
+                else colnames(final_data_set[x])
+        }
+        
+# Call function to Tidy up vaible names
+        for(i in 1:length(names(final_data_set))) {
+                names(final_data_set)[i]<-  tidy_names(i)
+        }     
+#########################################################        
 
 # Clean up Envioroment  
         rm( "myFun2","final_names1", "final_names", "my_names","my_filter_list","substring", "activity_list")
@@ -124,9 +141,10 @@ final_data_set$Activity <-lapply(final_data_set$Activity,myFun2)
 # Save Data file as "Project_Data.txt"
         write.table(second_set, file = "Project_Data.txt")
         
-# Read Data Table back into R and view
+# Read Data Table back into R and view it
         data <- read.table("Project_Data.txt", header = TRUE)
         View(data)
+        
 
 
 
